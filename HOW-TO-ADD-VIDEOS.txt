@@ -1,0 +1,39 @@
+========================================
+HOW TO ADD YOUR YOUTUBE VIDEOS
+========================================
+
+Rick Justine Pabalan | BSIT-S-2A | Operating Systems
+
+Each tutorial page has a placeholder: YOUR_VIDEO_ID
+
+To add your video:
+1. Get your YouTube video link (e.g., https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+2. Copy the video ID (the part after "v=") - e.g., dQw4w9WgXcQ
+3. Open the HTML file for that tutorial
+4. Find: src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+5. Replace YOUR_VIDEO_ID with your actual video ID
+
+Example:
+  Before: src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+  After:  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+
+FILES TO EDIT (replace YOUR_VIDEO_ID in each):
+---------------------------------------------
+OS:
+  - os/windows-95.html
+  - os/windows-98.html
+  - os/windows-me.html
+  - os/windows-2000.html
+  - os/windows-xp.html
+  - os/windows-vista.html
+  - os/windows-7.html
+  - os/windows-8-1.html
+  - os/windows-10.html
+  - os/windows-11.html
+
+Servers:
+  - server/windows-nt.html
+  - server/windows-server-2003.html
+  - server/windows-server-2008.html
+
+To view the website: Open index.html in your web browser.
