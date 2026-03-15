@@ -622,9 +622,15 @@ body::before {
   margin-bottom: 2rem;
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid rgba(66, 153, 225, 0.3);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  border: 3px solid var(--accent);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 30px rgba(6, 182, 212, 0.3);
   animation: fadeInUp 0.6s ease-out 0.2s both;
+  transition: all var(--transition-normal);
+}
+
+.video-container:hover {
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5), 0 0 40px rgba(6, 182, 212, 0.5);
+  border-color: var(--secondary);
 }
 
 .video-container iframe {
@@ -638,24 +644,45 @@ body::before {
 
 /* Description section */
 .tutorial-description {
-  background: rgba(26, 54, 93, 0.5);
-  border: 1px solid rgba(66, 153, 225, 0.2);
+  background: var(--bg-card);
+  border: 2px solid var(--accent);
   border-radius: 16px;
   padding: 2rem;
   margin-bottom: 2rem;
   animation: fadeInUp 0.6s ease-out 0.3s both;
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-normal);
+}
+
+.tutorial-description:hover {
+  box-shadow: var(--shadow-xl);
+  border-color: var(--secondary);
 }
 
 .tutorial-description h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: var(--blue-glow);
+  color: var(--primary);
+  border-bottom: 2px solid var(--secondary);
+  padding-bottom: 0.5rem;
+  display: inline-block;
 }
 
 .tutorial-description p {
   line-height: 1.8;
-  color: var(--gray);
+  color: var(--gray-600);
   margin-bottom: 1rem;
+}
+
+.tutorial-description ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.tutorial-description li {
+  color: var(--gray-600);
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
 }
 
 .steps-list {
