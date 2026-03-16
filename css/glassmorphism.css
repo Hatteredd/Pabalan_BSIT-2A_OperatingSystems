@@ -7,42 +7,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 /* ============================================
-   CSS Variables - Theme System
+   CSS Variables - Theme System (Solid Colors)
    ============================================ */
 
 :root {
-  /* Dark Theme (Default) */
-  --bg-primary: #0a0a0f;
-  --bg-secondary: #12121a;
-  --bg-tertiary: #1a1a25;
-  --bg-glass: rgba(255, 255, 255, 0.03);
-  --bg-glass-hover: rgba(255, 255, 255, 0.08);
-  --bg-glass-active: rgba(255, 255, 255, 0.12);
+  /* Dark Theme (Default) - Solid Colors */
+  --bg-primary: #0f0f1a;
+  --bg-secondary: #1a1a2e;
+  --bg-tertiary: #252542;
+  --bg-card: #1e1e32;
+  --bg-card-hover: #2a2a45;
+  --bg-card-active: #323255;
   
   --text-primary: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --text-tertiary: rgba(255, 255, 255, 0.5);
-  --text-muted: rgba(255, 255, 255, 0.35);
+  --text-secondary: #b8b8d1;
+  --text-tertiary: #8888aa;
+  --text-muted: #666688;
   
   --accent-cyan: #00d4ff;
-  --accent-cyan-glow: rgba(0, 212, 255, 0.5);
+  --accent-cyan-glow: rgba(0, 212, 255, 0.3);
   --accent-purple: #a855f7;
-  --accent-purple-glow: rgba(168, 85, 247, 0.5);
+  --accent-purple-glow: rgba(168, 85, 247, 0.3);
   --accent-pink: #ec4899;
-  --accent-pink-glow: rgba(236, 72, 153, 0.5);
+  --accent-pink-glow: rgba(236, 72, 153, 0.3);
   --accent-orange: #f97316;
-  --accent-orange-glow: rgba(249, 115, 22, 0.5);
+  --accent-orange-glow: rgba(249, 115, 22, 0.3);
   
-  --border-glass: rgba(255, 255, 255, 0.08);
-  --border-glass-hover: rgba(255, 255, 255, 0.15);
+  --border-color: #2a2a45;
+  --border-color-hover: #3a3a5c;
   
-  --shadow-glow-cyan: 0 0 40px rgba(0, 212, 255, 0.3);
-  --shadow-glow-purple: 0 0 40px rgba(168, 85, 247, 0.3);
-  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-glow-cyan: 0 0 30px rgba(0, 212, 255, 0.2);
+  --shadow-glow-purple: 0 0 30px rgba(168, 85, 247, 0.2);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-card-hover: 0 8px 40px rgba(0, 0, 0, 0.4);
   
   --gradient-hero: linear-gradient(135deg, #00d4ff 0%, #a855f7 50%, #ec4899 100%);
-  --gradient-card: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
-  --gradient-border: linear-gradient(135deg, rgba(0,212,255,0.5) 0%, rgba(168,85,247,0.5) 50%, rgba(236,72,153,0.5) 100%);
+  --gradient-card: linear-gradient(135deg, #1e1e32 0%, #252542 100%);
   
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
@@ -50,8 +50,8 @@
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
-  --radius-xl: 24px;
-  --radius-2xl: 32px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
   --radius-full: 9999px;
   
   --transition-fast: 150ms ease;
@@ -59,39 +59,39 @@
   --transition-slow: 500ms ease;
 }
 
-/* Light Theme */
+/* Light Theme - Solid Colors */
 [data-theme="light"] {
-  --bg-primary: #f8fafc;
+  --bg-primary: #f1f5f9;
   --bg-secondary: #ffffff;
-  --bg-tertiary: #f1f5f9;
-  --bg-glass: rgba(255, 255, 255, 0.7);
-  --bg-glass-hover: rgba(255, 255, 255, 0.9);
-  --bg-glass-active: rgba(255, 255, 255, 1);
+  --bg-tertiary: #e2e8f0;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f8fafc;
+  --bg-card-active: #f1f5f9;
   
   --text-primary: #0f172a;
-  --text-secondary: rgba(15, 23, 42, 0.7);
-  --text-tertiary: rgba(15, 23, 42, 0.5);
-  --text-muted: rgba(15, 23, 42, 0.35);
+  --text-secondary: #475569;
+  --text-tertiary: #64748b;
+  --text-muted: #94a3b8;
   
   --accent-cyan: #0891b2;
-  --accent-cyan-glow: rgba(8, 145, 178, 0.3);
+  --accent-cyan-glow: rgba(8, 145, 178, 0.2);
   --accent-purple: #7c3aed;
-  --accent-purple-glow: rgba(124, 58, 237, 0.3);
+  --accent-purple-glow: rgba(124, 58, 237, 0.2);
   --accent-pink: #db2777;
-  --accent-pink-glow: rgba(219, 39, 119, 0.3);
+  --accent-pink-glow: rgba(219, 39, 119, 0.2);
   --accent-orange: #ea580c;
-  --accent-orange-glow: rgba(234, 88, 12, 0.3);
+  --accent-orange-glow: rgba(234, 88, 12, 0.2);
   
-  --border-glass: rgba(15, 23, 42, 0.08);
-  --border-glass-hover: rgba(15, 23, 42, 0.15);
+  --border-color: #e2e8f0;
+  --border-color-hover: #cbd5e1;
   
-  --shadow-glow-cyan: 0 0 40px rgba(8, 145, 178, 0.2);
-  --shadow-glow-purple: 0 0 40px rgba(124, 58, 237, 0.2);
-  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.1);
+  --shadow-glow-cyan: 0 0 30px rgba(8, 145, 178, 0.15);
+  --shadow-glow-purple: 0 0 30px rgba(124, 58, 237, 0.15);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 8px 40px rgba(0, 0, 0, 0.12);
   
   --gradient-hero: linear-gradient(135deg, #0891b2 0%, #7c3aed 50%, #db2777 100%);
-  --gradient-card: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(241,245,249,0.9) 100%);
-  --gradient-border: linear-gradient(135deg, rgba(8,145,178,0.5) 0%, rgba(124,58,237,0.5) 50%, rgba(219,39,119,0.5) 100%);
+  --gradient-card: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
 }
 
 /* ============================================
@@ -142,43 +142,37 @@ body::before {
 }
 
 /* ============================================
-   Glassmorphism Components
+   Card Components (Solid Colors)
    ============================================ */
 
-.glass {
-  background: var(--bg-glass);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--border-glass);
-  box-shadow: var(--shadow-glass);
+.card-solid {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-card);
 }
 
-.glass-card {
-  background: var(--bg-glass);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--border-glass);
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-glass);
+  box-shadow: var(--shadow-card);
   transition: all var(--transition-normal);
 }
 
-.glass-card:hover {
-  background: var(--bg-glass-hover);
-  border-color: var(--border-glass-hover);
+.card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-color-hover);
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), var(--shadow-glow-cyan);
+  box-shadow: var(--shadow-card-hover), var(--shadow-glow-cyan);
 }
 
-[data-theme="light"] .glass-card:hover {
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), var(--shadow-glow-cyan);
+[data-theme="light"] .card:hover {
+  box-shadow: var(--shadow-card-hover), var(--shadow-glow-cyan);
 }
 
 .glass-button {
-  background: var(--bg-glass);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid var(--border-glass);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-full);
   color: var(--text-primary);
   padding: 12px 24px;
@@ -205,7 +199,7 @@ body::before {
 }
 
 .glass-button:hover {
-  background: var(--bg-glass-hover);
+  background: var(--bg-card-hover);
   border-color: var(--accent-cyan);
   box-shadow: 0 0 20px var(--accent-cyan-glow);
   transform: translateY(-2px);
@@ -219,27 +213,6 @@ body::before {
 
 .glass-button.primary:hover {
   box-shadow: 0 0 30px var(--accent-purple-glow);
-}
-
-/* Gradient Border Effect */
-.gradient-border {
-  position: relative;
-  background: var(--bg-glass);
-  border-radius: var(--radius-lg);
-}
-
-.gradient-border::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: var(--radius-lg);
-  padding: 1px;
-  background: var(--gradient-border);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
 }
 
 /* ============================================
@@ -257,10 +230,9 @@ body::before {
 }
 
 .navbar.scrolled {
-  background: var(--bg-glass);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--border-glass);
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow-card);
 }
 
 .nav-container {
@@ -316,7 +288,7 @@ body::before {
 
 .nav-links a:hover {
   color: var(--text-primary);
-  background: var(--bg-glass-hover);
+  background: var(--bg-card);
 }
 
 /* Dropdown */
@@ -342,7 +314,7 @@ body::before {
 
 .dropdown-toggle:hover {
   color: var(--text-primary);
-  background: var(--bg-glass-hover);
+  background: var(--bg-card);
 }
 
 .dropdown-menu {
@@ -350,12 +322,10 @@ body::before {
   top: calc(100% + 8px);
   left: 0;
   min-width: 220px;
-  background: var(--bg-glass);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--border-glass);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-glass);
+  box-shadow: var(--shadow-card-hover);
   padding: 8px;
   opacity: 0;
   visibility: hidden;
@@ -380,7 +350,7 @@ body::before {
 }
 
 .dropdown-menu a:hover {
-  background: var(--bg-glass-hover);
+  background: var(--bg-card);
   color: var(--text-primary);
 }
 
@@ -389,8 +359,8 @@ body::before {
   width: 48px;
   height: 48px;
   border-radius: var(--radius-full);
-  background: var(--bg-glass);
-  border: 1px solid var(--border-glass);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
   color: var(--text-primary);
   cursor: pointer;
   display: flex;
@@ -401,7 +371,7 @@ body::before {
 }
 
 .theme-toggle:hover {
-  background: var(--bg-glass-hover);
+  background: var(--bg-card-hover);
   border-color: var(--accent-cyan);
   box-shadow: 0 0 20px var(--accent-cyan-glow);
   transform: rotate(15deg);
@@ -727,14 +697,14 @@ body::before {
 }
 
 .tutorial-header {
-  background: var(--bg-glass);
-  backdrop-filter: blur(20px);
-  border: 1px solid var(--border-glass);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
   padding: 40px;
   margin-bottom: 40px;
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow-card);
 }
 
 .tutorial-header::before {
@@ -760,8 +730,8 @@ body::before {
 .year-badge {
   display: inline-block;
   padding: 8px 16px;
-  background: var(--bg-glass-active);
-  border: 1px solid var(--border-glass);
+  background: var(--bg-card-active);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-full);
   font-size: 0.875rem;
   font-weight: 600;
@@ -769,11 +739,11 @@ body::before {
 }
 
 .tutorial-content {
-  background: var(--bg-glass);
-  backdrop-filter: blur(20px);
-  border: 1px solid var(--border-glass);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
   padding: 40px;
+  box-shadow: var(--shadow-card);
 }
 
 .tutorial-content h2 {
@@ -919,13 +889,13 @@ body::before {
 }
 
 .about-card {
-  background: var(--bg-glass);
-  backdrop-filter: blur(20px);
-  border: 1px solid var(--border-glass);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-2xl);
   padding: 60px;
   max-width: 700px;
   text-align: center;
+  box-shadow: var(--shadow-card);
 }
 
 .about-avatar {
