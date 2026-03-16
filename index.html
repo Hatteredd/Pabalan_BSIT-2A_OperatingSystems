@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OS Installation Tutorials | Operating Systems</title>
   <meta name="author" content="Rick Justine Pabalan">
   <meta name="description" content="Video tutorials and activities for installing and configuring Windows operating systems and servers">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/glassmorphism.css">
 </head>
 <body>
   <!-- Navigation -->
@@ -65,184 +65,296 @@
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Operating System Installation Tutorials</h1>
-        <p class="subtitle">Video-based tutorials and configuration activities for Windows operating systems and servers</p>
-        <p class="meta-info">Rick Justine Pabalan • BSIT-S-2A • Operating Systems</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="floating-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    
+    <div class="hero-content">
+      <div class="hero-badge">
+        BSIT-S-2A • Operating Systems
       </div>
-    </section>
+      <h1>Operating System Installation Tutorials</h1>
+      <p class="hero-subtitle">Video-based tutorials and configuration activities for Windows operating systems and servers</p>
+      <p class="hero-meta">Rick Justine Pabalan</p>
+      <div class="hero-buttons">
+        <a href="#installations" class="glass-button primary">Explore Installations</a>
+        <a href="#activities" class="glass-button">View Activities</a>
+      </div>
+    </div>
+  </section>
 
-    <section class="container">
-      <h2 class="section-title">Installations</h2>
-      <div class="tutorial-grid">
-        <a href="os/windows-95.html" class="tutorial-card">
-          <h3>Windows 95</h3>
-          <span class="year">1995</span>
-          <p>The revolutionary OS that brought the Start menu and taskbar. Learn how to install this iconic operating system.</p>
-        </a>
-        <a href="os/windows-98.html" class="tutorial-card">
-          <h3>Windows 98</h3>
-          <span class="year">1998</span>
-          <p>Enhanced Internet Explorer and USB support. Follow along to install Windows 98 on your system.</p>
-        </a>
-        <a href="os/windows-me.html" class="tutorial-card">
-          <h3>Windows ME</h3>
-          <span class="year">2000</span>
-          <p>Windows Millennium Edition focused on multimedia. Discover the installation process.</p>
-        </a>
-        <a href="os/windows-nt4.html" class="tutorial-card">
-          <h3>Windows NT 4.0</h3>
-          <span class="year">1996</span>
-          <p>NT-based workstation OS that brought the Windows 95 shell together with the NT kernel, ideal for professional desktops.</p>
-        </a>
-        <a href="os/windows-2000.html" class="tutorial-card">
-          <h3>Windows 2000 Professional</h3>
-          <span class="year">2000</span>
-          <p>Enterprise-grade stability for professional use, built on the NT kernel with NTFS and Active Directory integration.</p>
-        </a>
-        <a href="os/windows-xp.html" class="tutorial-card">
-          <h3>Windows XP</h3>
-          <span class="year">2001</span>
-          <p>The legendary OS loved by millions. Complete installation tutorial included.</p>
-        </a>
-        <a href="os/windows-vista.html" class="tutorial-card">
-          <h3>Windows Vista</h3>
-          <span class="year">2007</span>
-          <p>Aero Glass and enhanced security. Learn Vista installation steps.</p>
-        </a>
-        <a href="os/windows-7.html" class="tutorial-card">
-          <h3>Windows 7</h3>
-          <span class="year">2009</span>
-          <p>Polished UI and improved performance. Installation walkthrough available.</p>
-        </a>
-        <a href="os/windows-8-1.html" class="tutorial-card">
-          <h3>Windows 8.1</h3>
-          <span class="year">2013</span>
-          <p>Start button returns with modern touch interface. Install guide inside.</p>
-        </a>
-        <a href="os/windows-10.html" class="tutorial-card">
-          <h3>Windows 10</h3>
-          <span class="year">2015</span>
-          <p>Universal OS for all devices. Full installation tutorial.</p>
-        </a>
-        <a href="os/windows-11.html" class="tutorial-card">
-          <h3>Windows 11</h3>
-          <span class="year">2021</span>
-          <p>Modern design with centered Start. Complete setup guide.</p>
-        </a>
-        <a href="server/windows-server-2003.html" class="tutorial-card">
-          <h3>Windows Server 2003</h3>
-          <span class="year">2003</span>
-          <p>Enhanced Active Directory, IIS 6.0, and stronger security for enterprise deployments.</p>
-        </a>
-        <a href="server/windows-server-2008.html" class="tutorial-card">
-          <h3>Windows Server 2008</h3>
-          <span class="year">2008</span>
-          <p>Introduced Hyper-V, Server Core, and a new Server Manager experience for modern infrastructure and virtualization.</p>
-        </a>
-      </div>
+  <!-- Installations Section -->
+  <section class="section" id="installations">
+    <div class="section-header">
+      <span class="section-label">Installations</span>
+      <h2 class="section-title">Windows Operating Systems & Servers</h2>
+      <p class="section-description">Step-by-step installation guides for Windows OS versions from 95 to 11, plus Server editions</p>
+    </div>
+    
+    <div class="card-grid">
+      <a href="os/windows-95.html" class="card">
+        <div class="card-icon">🖥️</div>
+        <h3>Windows 95</h3>
+        <span class="card-year">1995</span>
+        <p>The revolutionary OS that brought the Start menu and taskbar. Learn how to install this iconic operating system.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="os/windows-98.html" class="card">
+        <div class="card-icon">💿</div>
+        <h3>Windows 98</h3>
+        <span class="card-year">1998</span>
+        <p>Enhanced Internet Explorer and USB support. Follow along to install Windows 98 on your system.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="os/windows-me.html" class="card">
+        <div class="card-icon">🎵</div>
+        <h3>Windows ME</h3>
+        <span class="card-year">2000</span>
+        <p>Windows Millennium Edition focused on multimedia. Discover the installation process.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="os/windows-nt4.html" class="card">
+        <div class="card-icon">🏢</div>
+        <h3>Windows NT 4.0</h3>
+        <span class="card-year">1996</span>
+        <p>NT-based workstation OS that brought the Windows 95 shell together with the NT kernel.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="os/windows-2000.html" class="card">
+        <div class="card-icon">🔷</div>
+        <h3>Windows 2000 Professional</h3>
+        <span class="card-year">2000</span>
+        <p>Enterprise-grade stability for professional use, built on the NT kernel with NTFS and Active Directory.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="os/windows-xp.html" class="card">
+        <div class="card-icon">🪟</div>
+        <h3>Windows XP</h3>
+        <span class="card-year">2001</span>
+        <p>The legendary OS loved by millions. Complete installation tutorial included.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="os/windows-vista.html" class="card">
+        <div class="card-icon">✨</div>
+        <h3>Windows Vista</h3>
+        <span class="card-year">2007</span>
+        <p>Aero Glass and enhanced security. Learn Vista installation steps.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="os/windows-7.html" class="card">
+        <div class="card-icon">🔷</div>
+        <h3>Windows 7</h3>
+        <span class="card-year">2009</span>
+        <p>Polished UI and improved performance. Installation walkthrough available.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="os/windows-8-1.html" class="card">
+        <div class="card-icon">📱</div>
+        <h3>Windows 8.1</h3>
+        <span class="card-year">2013</span>
+        <p>Start button returns with modern touch interface. Install guide inside.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="os/windows-10.html" class="card">
+        <div class="card-icon">🎯</div>
+        <h3>Windows 10</h3>
+        <span class="card-year">2015</span>
+        <p>Universal OS for all devices. Full installation tutorial.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="os/windows-11.html" class="card">
+        <div class="card-icon">🎨</div>
+        <h3>Windows 11</h3>
+        <span class="card-year">2021</span>
+        <p>Modern design with centered Start. Complete setup guide.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="server/windows-server-2003.html" class="card">
+        <div class="card-icon">🖧</div>
+        <h3>Windows Server 2003</h3>
+        <span class="card-year">2003</span>
+        <p>Enhanced Active Directory, IIS 6.0, and stronger security for enterprise deployments.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="server/windows-server-2008.html" class="card">
+        <div class="card-icon">☁️</div>
+        <h3>Windows Server 2008</h3>
+        <span class="card-year">2008</span>
+        <p>Introduced Hyper-V, Server Core, and a new Server Manager experience for modern infrastructure.</p>
+        <div class="card-arrow">→</div>
+      </a>
+    </div>
+  </section>
 
-      <h2 class="section-title">Activities</h2>
-      <div class="tutorial-grid">
-        <a href="activities/product-key-multiple-users.html" class="tutorial-card">
-          <h3>Product Key and Multiple Users</h3>
-          <span class="year">Activity</span>
-          <p>Explore how Windows activation and licensing work, and how to prepare systems for multiple user accounts.</p>
-        </a>
-        <a href="activities/adding-dhcp-role.html" class="tutorial-card">
-          <h3>Adding DHCP Role</h3>
-          <span class="year">Activity</span>
-          <p>Configure the DHCP server role to automatically assign IP addresses and network configuration to client machines.</p>
-        </a>
-        <a href="activities/raid-configuration.html" class="tutorial-card">
-          <h3>RAID Configuration</h3>
-          <span class="year">Activity</span>
-          <p>Learn how to design and configure RAID arrays to balance performance, redundancy, and storage capacity.</p>
-        </a>
-        <a href="activities/file-services.html" class="tutorial-card">
-          <h3>File Services</h3>
-          <span class="year">Activity</span>
-          <p>Set up shared folders, permissions, and storage quotas so users can securely access and manage files on the network.</p>
-        </a>
-        <a href="activities/application-web-server.html" class="tutorial-card">
-          <h3>Application &amp; Web Server</h3>
-          <span class="year">Activity</span>
-          <p>Deploy IIS and application components to host web applications and services on a Windows server.</p>
-        </a>
-        <a href="activities/group-policy.html" class="tutorial-card">
-          <h3>Group Policy</h3>
-          <span class="year">Activity</span>
-          <p>Use Group Policy to centrally manage security settings, software, and user experience across multiple machines.</p>
-        </a>
-      </div>
+  <!-- Activities Section -->
+  <section class="section" id="activities">
+    <div class="section-header">
+      <span class="section-label">Activities</span>
+      <h2 class="section-title">Hands-on Configuration Activities</h2>
+      <p class="section-description">Practical exercises to master Windows Server configuration and management</p>
+    </div>
+    
+    <div class="card-grid">
+      <a href="activities/product-key-multiple-users.html" class="card">
+        <div class="card-icon">🔑</div>
+        <h3>Product Key and Multiple Users</h3>
+        <span class="card-year">Activity</span>
+        <p>Explore how Windows activation and licensing work, and how to prepare systems for multiple user accounts.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="activities/adding-dhcp-role.html" class="card">
+        <div class="card-icon">🌐</div>
+        <h3>Adding DHCP Role</h3>
+        <span class="card-year">Activity</span>
+        <p>Configure the DHCP server role to automatically assign IP addresses and network configuration to client machines.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="activities/raid-configuration.html" class="card">
+        <div class="card-icon">💾</div>
+        <h3>RAID Configuration</h3>
+        <span class="card-year">Activity</span>
+        <p>Learn how to design and configure RAID arrays to balance performance, redundancy, and storage capacity.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="activities/file-services.html" class="card">
+        <div class="card-icon">📁</div>
+        <h3>File Services</h3>
+        <span class="card-year">Activity</span>
+        <p>Set up shared folders, permissions, and storage quotas so users can securely access and manage files on the network.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="activities/application-web-server.html" class="card">
+        <div class="card-icon">🌐</div>
+        <h3>Application &amp; Web Server</h3>
+        <span class="card-year">Activity</span>
+        <p>Deploy IIS and application components to host web applications and services on a Windows server.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="activities/group-policy.html" class="card">
+        <div class="card-icon">⚙️</div>
+        <h3>Group Policy</h3>
+        <span class="card-year">Activity</span>
+        <p>Use Group Policy to centrally manage security settings, software, and user experience across multiple machines.</p>
+        <div class="card-arrow">→</div>
+      </a>
+    </div>
+  </section>
 
-      <h2 class="section-title">Case Studies</h2>
-      <div class="tutorial-grid">
-        <a href="case-studies/case-study-1.html" class="tutorial-card">
-          <h3>Case Study 1</h3>
-          <span class="year">Analysis</span>
-          <p>First case study covering fundamental OS concepts and implementation strategies.</p>
-        </a>
-        <a href="case-studies/case-study-2.html" class="tutorial-card">
-          <h3>Case Study 2</h3>
-          <span class="year">Analysis</span>
-          <p>Advanced system configuration and troubleshooting techniques in enterprise environments.</p>
-        </a>
-        <a href="case-studies/case-study-3.html" class="tutorial-card">
-          <h3>Case Study 3</h3>
-          <span class="year">Analysis</span>
-          <p>Network infrastructure design and implementation for scalable business solutions.</p>
-        </a>
-        <a href="case-studies/case-study-4.html" class="tutorial-card">
-          <h3>Case Study 4</h3>
-          <span class="year">Analysis</span>
-          <p>Security best practices and threat mitigation strategies for Windows environments.</p>
-        </a>
-        <a href="case-studies/case-study-5.html" class="tutorial-card">
-          <h3>Case Study 5</h3>
-          <span class="year">Analysis</span>
-          <p>Performance optimization and resource management for high-demand systems.</p>
-        </a>
-        <a href="case-studies/case-study-6.html" class="tutorial-card">
-          <h3>Case Study 6</h3>
-          <span class="year">Analysis</span>
-          <p>Backup and disaster recovery planning for business continuity and data protection.</p>
-        </a>
-        <a href="case-studies/case-study-7.html" class="tutorial-card">
-          <h3>Case Study 7</h3>
-          <span class="year">Analysis</span>
-          <p>Virtualization strategies and container deployment for modern infrastructure.</p>
-        </a>
-        <a href="case-studies/case-study-8.html" class="tutorial-card">
-          <h3>Case Study 8</h3>
-          <span class="year">Analysis</span>
-          <p>Cloud integration and hybrid environment management scenarios.</p>
-        </a>
-        <a href="case-studies/case-study-9.html" class="tutorial-card">
-          <h3>Case Study 9</h3>
-          <span class="year">Analysis</span>
-          <p>Comprehensive system audit and compliance assessment methodologies.</p>
-        </a>
-      </div>
-    </section>
-  </main>
+  <!-- Case Studies Section -->
+  <section class="section" id="case-studies">
+    <div class="section-header">
+      <span class="section-label">Case Studies</span>
+      <h2 class="section-title">Real-World Case Studies</h2>
+      <p class="section-description">In-depth analysis of operating system scenarios and implementation strategies</p>
+    </div>
+    
+    <div class="card-grid">
+      <a href="case-studies/case-study-1.html" class="card">
+        <div class="card-icon">📊</div>
+        <h3>Case Study 1</h3>
+        <span class="card-year">Analysis</span>
+        <p>First case study covering fundamental OS concepts and implementation strategies.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="case-studies/case-study-2.html" class="card">
+        <div class="card-icon">📊</div>
+        <h3>Case Study 2</h3>
+        <span class="card-year">Analysis</span>
+        <p>Second case study exploring system architecture and design patterns.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="case-studies/case-study-3.html" class="card">
+        <div class="card-icon">📊</div>
+        <h3>Case Study 3</h3>
+        <span class="card-year">Analysis</span>
+        <p>Third case study examining security considerations and best practices.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="case-studies/case-study-4.html" class="card">
+        <div class="card-icon">📊</div>
+        <h3>Case Study 4</h3>
+        <span class="card-year">Analysis</span>
+        <p>Fourth case study analyzing performance optimization techniques.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="case-studies/case-study-5.html" class="card">
+        <div class="card-icon">📊</div>
+        <h3>Case Study 5</h3>
+        <span class="card-year">Analysis</span>
+        <p>Fifth case study reviewing network configuration and management.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="case-studies/case-study-6.html" class="card">
+        <div class="card-icon">📊</div>
+        <h3>Case Study 6</h3>
+        <span class="card-year">Analysis</span>
+        <p>Sixth case study investigating virtualization and cloud integration.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="case-studies/case-study-7.html" class="card">
+        <div class="card-icon">📊</div>
+        <h3>Case Study 7</h3>
+        <span class="card-year">Analysis</span>
+        <p>Seventh case study exploring disaster recovery and backup strategies.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="case-studies/case-study-8.html" class="card">
+        <div class="card-icon">📊</div>
+        <h3>Case Study 8</h3>
+        <span class="card-year">Analysis</span>
+        <p>Eighth case study covering enterprise deployment scenarios.</p>
+        <div class="card-arrow">→</div>
+      </a>
+      
+      <a href="case-studies/case-study-9.html" class="card">
+        <div class="card-icon">📊</div>
+        <h3>Case Study 9</h3>
+        <span class="card-year">Analysis</span>
+        <p>Ninth case study summarizing comprehensive OS management approaches.</p>
+        <div class="card-arrow">→</div>
+      </a>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-content">
-      <p><strong>Rick Justine Pabalan</strong> | BSIT-S-2A | Operating Systems</p>
-      <p class="copyright">
-        © 2026 Rick Justine Pabalan. All rights reserved. This website is for educational purposes. 
-        Video tutorials are created for instructional use in the Operating Systems course. 
-        Windows and related trademarks belong to Microsoft Corporation.
-      </p>
+      <div class="footer-brand">
+        <div class="footer-brand-icon">💻</div>
+        <span class="footer-brand-text">OS Tutorials</span>
+      </div>
+      <p class="footer-copyright">© 2024 Rick Justine Pabalan • BSIT-S-2A • Operating Systems</p>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
-  <!-- Final deployment from OS directory - March 2026 -->
+  <script src="js/glassmorphism.js"></script>
 </body>
 </html>
